@@ -739,7 +739,10 @@
 /* Footer */
 .footer {
   padding: 12px 16px 20px;
+  display: grid;
+  justify-content: center;
 }
+
 .footerText {
   display: block;
   max-width: var(--container);
@@ -768,7 +771,7 @@
   display: inline-block;
   margin: 0 auto;
   padding: 12px 18px;
-  background: #111;
+  background: var(--accent);
   color: white;
   text-decoration: none;
   border-radius: 999px;

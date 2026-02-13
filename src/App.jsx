@@ -1,5 +1,6 @@
 import React, { useMemo } from "react";
 import { Routes, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
@@ -15,7 +16,7 @@ import { content } from "./data/content.js";
 function HomePage() {
   const resolvedHeadline = content.heroHeadline.replace(
     "{herName}",
-    content.herName
+    content.herName,
   );
 
   return (
@@ -53,9 +54,9 @@ function HomePage() {
       </main>
 
       <footer className="footer">
-        <a href="/love" className="loveBtn">
+        <Link to="/love" className="loveBtn">
           Do you love me? 🐾
-        </a>
+        </Link>
       </footer>
     </>
   );
